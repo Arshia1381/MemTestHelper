@@ -513,7 +513,8 @@ The default value is fixed 1.100V and AMD recommends keeping it at that level. I
    
 7. Set `tRAS = tCL + tRCD(RD) + 2`. Increase if unstable.
    * Setting tRAS lower than this can incur a [performance penalty](https://www.overclock.net/threads/official-intel-ddr4-24-7-memory-stability-thread.1569364/page-188#post-25801780).
-
+   * tRAS often has a minimum value. On Intel platforms, this is typically a minimum of 28 clocks. On AMD, this value is at a minimum of 21 clocks.
+   
 8. Set `tRC = tRP + tRAS`. Increase if unstable.
    * tRC is only available on AMD and some Intel UEFIs.
    * On Intel UEFIs, tRC does seem to be affected by tRP and tRAS, even if it is hidden.
